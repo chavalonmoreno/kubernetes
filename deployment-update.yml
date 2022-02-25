@@ -27,10 +27,10 @@ spec:
         volumeMounts:
         - name: postgres-database-storage
           mountPath: /var/lib/pgsql/data
-      - name: conector-api
-        image: alexismorenov/conector-stp:1.0.5
-        ports:
-          - containerPort: 8085
+            #- name: conector-api
+            #image: alexismorenov/conector-stp:1.0.6
+            #ports:
+            #- containerPort: 8085
       volumes:
       - name: postgres-database-storage
         persistentVolumeClaim:
